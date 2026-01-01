@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <title>Under Construction - Chenhao Hong</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+<body class="bg-light" data-spy="scroll" data-target="#navbar" data-offset="100">
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top mb-5 shadow-sm">
+    <div class="container-lg">
+        <a class="navbar-brand d-flex align-items-center">
+            <img src="/favicon.svg" alt="" class="mr-2" style="height: 30px; width: 30px;">
+            <strong>Chenhao Hong</strong>
+        </a>
+        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-map"></i> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/under-construction">Publications</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/under-construction">Projects</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/showcase">Showcase</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div id="pjax-progress" class="pjax-progress"></div>
+    <div id="pjax-container" class="container-lg">
+        <div class="row">
+  <div class="col-12 col-lg-10 mx-auto text-center py-5">
+    <h1>Under Construction</h1>
+    <p>This page is currently being built. Please check back soon.</p>
+    <a href="/" class="btn btn-primary mt-3">Return Home</a>
+  </div>
+</div>
+
+    </div>
+    <div id="music-player-stash" style="display:none;">
+        <div id="music-player" class="card border-0 shadow-sm bg-white h-100">
+    <div class="card-body d-flex flex-column">
+        <div class="d-flex flex-column mb-3">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+                <p class="text-muted small mb-0">Now Playing</p>
+                <a href="https://soundcloud.com" class="small d-inline-flex align-items-center text-decoration-none text-muted" target="_blank">
+                    <i class="fa-brands fa-soundcloud mr-1"></i>
+                    <span>Powered by SoundCloud</span>
+                </a>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="mr-3 flex-grow-1">
+                    <h5 class="mb-0" id="mp-title">—</h5>
+                    <div class="text-secondary" id="mp-artist">—</div>
+                </div>
+                <div class="btn-group" role="group" aria-label="Player controls">
+                    <button class="btn btn-outline-secondary btn-icon" type="button" id="mp-prev" aria-label="Previous track">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+                    <button class="btn btn-primary btn-icon" type="button" id="mp-play-toggle" aria-label="Play or pause">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary btn-icon" type="button" id="mp-next" aria-label="Next track">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-2">
+            <div class="d-flex justify-content-between small text-muted" id="mp-time">
+                <span id="mp-current">0:00</span>
+                <span id="mp-duration">0:00</span>
+            </div>
+            <div class="progress mp-progress" role="progressbar" aria-label="Seek" tabindex="0">
+                <div class="progress-bar" id="mp-progress-bar" style="width:0%"></div>
+            </div>
+        </div>
+
+        <div class="mp-playlist list-group list-group-flush flex-grow-1" id="mp-playlist" aria-label="Playlist">
+            <!-- playlist items injected via JS -->
+        </div>
+    </div>
+</div>
+<script>
+    window.SHOWCASE_PLAYLIST = window.SHOWCASE_PLAYLIST || [{"title":"felys final remix","artist":"onoken","url":"https://soundcloud.com/yami-sora/felys-final-remix"},{"title":"Last | Eternity","artist":"onoken","url":"https://soundcloud.com/beamgg20-ch/arcaealast-eternity-onoken"},{"title":"TIAN TIAN","artist":"Mili","url":"https://soundcloud.com/a-random-knoose/mili-tian-tian-limbus-company"},{"title":"Kass: Champion Revali's Song","artist":"Yasuaki Iwata","url":"https://soundcloud.com/nintendo-infinite3/kass-revalis-ballad"},{"title":"Infinity Heaven","artist":"HyuN","url":"https://soundcloud.com/keiny-pham/infinity-heaven"},{"title":"Partical Arts","artist":"Virtual Self","url":"https://soundcloud.com/virtualself-music/particle-arts"},{"title":"Used to be","artist":"KIVΛ","url":"https://soundcloud.com/kivawu/cytus-ii-theme-used-to-be"},{"title":"Moonlike Smile","artist":"Yu-Peng Chen","url":"https://soundcloud.com/genshinimpact/03-moonlike-smile"},{"title":"Testify","artist":"void (Mournfinale)","url":"https://soundcloud.com/hikari-spoon/arcaea-testify-void-mournfinale-feat"},{"title":"Reach for the Summit","artist":"Lena Raine","url":"https://soundcloud.com/sashicoo/official-celeste-original-soundtrack-18-reach-for-the-summit"},{"title":"eroding the \"pore\" (interlude) →\nUndying Macula ~penumbra~","artist":"Ashrount","url":"https://soundcloud.com/eto-moshi/eroding-the-pore-undying"}];
+</script>
+
+    </div>
+    <footer class="footer border-top py-2 mt-5 bg-white small">
+    <div class="container-lg">
+        <div class="row my-3">
+            <div class="col-6">
+                <div class="text-muted">
+                    <i>Last updated: Dec 2025</i>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-right text-muted">
+                    &copy; 2025 Chenhao Hong
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false}
+              ],
+              throwOnError : false
+            });
+        });
+    </script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/music_player.js"></script>
+    <script src="/assets/js/bubble_visual_hash.js"></script>
+    <script src="/assets/js/semantic_scholar_citation_count.js"></script>
+</body>
+</html>
