@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /showcase.html
+Allow: /
+Sitemap: https://hchenhao.github.io/sitemap.xml
